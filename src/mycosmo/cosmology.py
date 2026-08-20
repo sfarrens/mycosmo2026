@@ -43,8 +43,8 @@ def hubble(
         H(z) = \sqrt{H_0^2 (\Omega_{m,0}(1+z)^3 + \Omega_{k,0}(1+z)^2 +
             \Omega_{\Lambda,0})}
 
-    Example
-    -------
+    Examples
+    --------
     >>> from mycosmo.cosmology import hubble
     >>> cosmo_dict = {
     ...     "H0": 70,
@@ -98,12 +98,16 @@ def critical_density(
 
         \rho_c(z) = \frac{3H^2(z)}{8\pi G}
 
-    Example
-    -------
+    Examples
+    --------
     >>> from mycosmo.cosmology import critical_density
-    >>> cosmo_dict = {"H0": 70, "omega_m_0": 0.3, "omega_k_0": 0.0,
-    "omega_lambda_0": 0.7}
-    >>> critical_density(0.0, cosmo_dict)
+    >>> cosmo_dict = {
+    ...     "H0": 70,
+    ...     "omega_m_0": 0.3,
+    ...     "omega_k_0": 0.0,
+    ...     "omega_lambda_0": 0.7,
+    ... }
+    >>> float(critical_density(0.0, cosmo_dict))
     9.203859495267889e-27
 
     """
