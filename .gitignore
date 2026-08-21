@@ -11,3 +11,8 @@ wheels/
 
 # PyTest-generated files
 .coverage
+
+# Profiling results
+cprofile_results.prof
+memray_results.bin
+memray-flamegraph-memray_results.html
